@@ -86,6 +86,9 @@ if (isset($_POST['upload_file'])) {
             print_r($errors);
         }
     }
+
+ 
+
 }
 ?>
 <!doctype html>

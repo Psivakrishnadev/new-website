@@ -427,7 +427,7 @@ if (isset($_POST['login'])) {
 											</li>
 										</ul>
 									</li> -->
-                                    li class="dropdown submenu">
+                                    <li class="dropdown submenu">
 									<a href="clients.html" target="_blank">Clients</a>
 									<!--<ul class="dropdown-menu">
 										<li><a href="company-logo.html">Compnaies logo's </a></li>
@@ -523,8 +523,6 @@ if (isset($_POST['login'])) {
                                 <option value disabled selected>Sign in for</option>
                                 <option value="select">Employer</option>
                                 <option value="m">Candidate</option>
-                                <option value="f">College/Institutes</option>
-                                <option value="others">Freelance HR Recruiters</option>
                             </select>
                         </div>
 

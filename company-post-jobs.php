@@ -145,8 +145,7 @@ $mail = @mail($to, $subject, $message, $headers, $returnpath);
 // Email sending status 
 echo $mail?"<h1>Email Sent Successfully!</h1>":"<h1>Email sending failed.</h1>"; 
             
-            // mail('mehedihasansagor.cse@gmail.com', 'Subject Line Here', 'Body of Message Here', 'From: ceo@growthtechinnovaations.com');
-            // die('email send');
+
         }
 
     }
@@ -572,9 +571,9 @@ echo $mail?"<h1>Email Sent Successfully!</h1>":"<h1>Email sending failed.</h1>";
                                             <div class="form-group">
                                                 <label>Region</label>
                                                 <select name="region">
-                                                    <option>New York</option>
-                                                    <option>London</option>
-                                                    <option>Los Angeles</option>
+                                                    <option>Hyderabad</option>
+                                                    <option>Pune</option>
+                                                    <option>Chennai</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -582,7 +581,7 @@ echo $mail?"<h1>Email Sent Successfully!</h1>":"<h1>Email sending failed.</h1>";
                                             <div class="form-group">
                                                 <label>Location</label>
                                                 <input type="text" name="location" class="form-control"
-                                                    placeholder="London">
+                                                    placeholder="Telengana">
                                             </div>
                                         </div>
                                         <div class="col-lg-12 col-md-12">

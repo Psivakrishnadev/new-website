@@ -344,8 +344,6 @@ if (isset($_POST['register'])) {
                                 <option value disabled selected>Register For</option>
                                 <option value="employer">Employer</option>
                                 <option value="candidate">Candidate</option>
-                                <option value="college-institutes">College/Institutes</option>
-                                <option value="others">Freelance HR Recruiters</option>
                             </select>
                         </div>
 
