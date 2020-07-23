@@ -1,0 +1,15 @@
+.form-control.slate,.ie8 .slate,.ie9 .slate{-webkit-appearance:none;-moz-appearance:none;-o-appearance:none}
+
+.form-control2,.form-control3{height:45px;border-radius:0;margin:1px 0;padding:5px 10px;width:100%}
+.form-control2{border-bottom:1px solid #c4c4c4!important;font-size:18px;color:#000;border:none}
+.form-control3{border-bottom:1px solid #c4c4c4!important;font-size:15px;color:#424242;border:none;background:#dde0e2}
+.form-control5{border-radius:0;padding:5px 10px;font-size:18px;color:#424242;margin:0 0 30px;border:none;width:100%;background:#f4f5f5}
+.form-control2.slate{background:url(../images/arrow_icon_05.png) right 10px center no-repeat #f4f5f5;
+-webkit-appearance:none;-moz-appearance:none;-o-appearance:none;appearance:none;color:#424242}
+.full-width{float:left;width:100%;margin-top:5px;min-height:100px;position:relative}
+.form-style-fake{position:absolute;top:0}
+.form-style-base{position:absolute;top:14px;z-index:999;left:120px;font-size:12px}
+.alert-failure{background:url(../images/warning_icon.png) left 20px center no-repeat #f1f1f1;padding:20px 15px 20px 90px;
+font-size:17px;text-transform:uppercase;color:#000}.alert-failure a{color:#000}
+.bdr-bottom{border-top:1px solid #878787;float:left;width:100%}.bdr-left2{border-left:1px solid #878787;margin:0;padding:0}
+

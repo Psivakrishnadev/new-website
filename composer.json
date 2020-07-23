@@ -1,0 +1,12 @@
+{
+    "name": "sagor/project-1",
+    "authors": [
+        {
+            "name": "sagor110090",
+            "email": "hasan15-4933@diu.edu.bd"
+        }
+    ],
+    "require": {
+        "mpdf/mpdf": "^8.0"
+    }
+}
