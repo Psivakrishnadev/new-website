@@ -427,15 +427,27 @@ if (isset($_POST['login'])) {
 											</li>
 										</ul>
 									</li> -->
-                            <li class="dropdown submenu ">
-                                <a href="clients.html" target="_blank">Clients</a>
-                                <!--<ul class="dropdown-menu">
-											<li><a href="company-logo.html">Compnaies logo's </a></li>
-
-										</ul> -->
-                            </li>
-                            <li class="dropdown submenu ">
-                                <a href="industries.html" target="_blank">Industires</a>
+                                    li class="dropdown submenu">
+									<a href="clients.html" target="_blank">Clients</a>
+									<!--<ul class="dropdown-menu">
+										<li><a href="company-logo.html">Compnaies logo's </a></li>
+										
+									</ul> -->
+								</li>
+								<li class="dropdown submenu">
+									<a href="industries.html" target="_blank">Industires</a>
+									
+								</li>
+								
+								<li class="dropdown submenu">
+								<a href="register.php" target="_blank">Register</a>
+									
+								</li>
+								
+								<li class="dropdown submenu">
+								<a href="login.php" target="_blank">Login</a>
+								</li>
+                            
                                 <!--	<ul class="dropdown-menu">
 											<li><a href="automobile.html">Automobile </a></li>
 											<li><a href="banking-insurance.html">Banking and  Insurance</a></li>
@@ -453,55 +465,8 @@ if (isset($_POST['login'])) {
 											<li><a href="telecommunication.html">Telecommunication</a></li>
 										</ul> -->
                             </li>
-                            <li class="dropdown submenu ">
-                                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button"
-                                    aria-haspopup="true" aria-expanded="false">Job Seekars</a>
-                                <ul class="dropdown-menu right">
-                                    <li><a href="jobs-profile.html" target="_blank">My Profile</a></li>
-                                    <li><a href="#">My Resume</a></li>
-                                    <li><a href="jobs-applied-job.html" target="_blank">Applied Job</a></li>
-                                    <li><a href="jobs-alerts.html" target="_blank">Job Alert</a></li>
-                                    <li><a href="jobs-saved-jobs.html" target="_blank">Saved Jobs</a></li>
-                                    <li><a href="jobs-change-password.html" target="_blank">Change Password</a></li>
-
-                                </ul>
-                            </li>
-                            <li class="dropdown submenu">
-                                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button"
-                                    aria-haspopup="true" aria-expanded="false">Employers</a>
-                                <ul class="dropdown-menu right">
-                                    <li><a href="company-profile.html" target="_blank">Company Profile</a></li>
-                                    <li><a href="company-resume.html" target="_blank">Employer Resume</a></li>
-                                    <li><a href="company-post-jobs.html" target="_blank">Post A Job</a></li>
-                                    <li><a href="company-manage-job.html" target="_blank">Manage Job</a></li>
-
-
-                                </ul>
-                            </li>
-                            <li class="dropdown submenu">
-                                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button"
-                                    aria-haspopup="true" aria-expanded="false">Register </a>
-                                <ul class="dropdown-menu right">
-                                    <li><a href="corporate-register.html" target="_blank">Employer </a></li>
-                                    <li><a href="college-register.html" target="_blank">Colleges / Institutes </a></li>
-                                    <li><a href="candidate-register.html" target="_blank">Candidate </a></li>
-                                    <li><a href="freelance-hr.html" target="_blank">Freelance HR Recruiters</a></li>
-
-                                </ul>
-                            </li>
-                            <!--<li class="dropdown submenu">
-										<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Members  Register </a>
-										<ul class="dropdown-menu right">
-											<li><a href="#">Freelance HR Recruiters</a></li>
-											<li><a href="#">Colleges or Institutes</a></li>
-
-										</ul>
-									</li> -->
-                            <div class="group"
-                                style="margin-top:20px;padding: 11px 33px;font-size:15px;background: #21479a;height: 52px;border-radius: 19px">
-                                <a href="login.html" target="_blank">Login</a>
-                            </div>
-                        </ul>
+                            
+                            
                         <ul class="nav navbar-nav navbar-right">
                             <li><a class="popup-with-zoom-anim" href="#test-search"><i class="icon icon-Search"></i></a>
                             </li>
