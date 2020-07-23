@@ -1,10 +1,10 @@
 <?php
 
 $sname= "localhost";
-$unmae= "job_board113";
-$password = "wxyz12345";
+$unmae= "root";
+$password = "";
 
-$db_name = "testa_01";
+$db_name = "new";
 
 $conn = mysqli_connect($sname, $unmae, $password, $db_name);
 

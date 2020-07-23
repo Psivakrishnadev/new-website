@@ -1,3 +1,13 @@
+<?php 
+session_start();
+
+if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
+
+ ?> 
+
+
+
+
 <?php
 include "db_conn.php";
 
@@ -453,7 +463,7 @@ echo $mail?"<h1>Email Sent Successfully!</h1>":"<h1>Email sending failed.</h1>";
                                             </div>
                                         </div>
                                         <div class="candidate-title">
-                                            <h4 class="m-b5"><a href="javascript:void(0);">@COMPANY</a></h4>
+                                            <h4 class="m-b5"><a href="javascript:void(0);"><?= $_SESSION['user_name']    ?></a></h4>
                                         </div>
                                     </div>
                                     <ul>
@@ -473,7 +483,7 @@ echo $mail?"<h1>Email Sent Successfully!</h1>":"<h1>Email sending failed.</h1>";
                                         <li><a href="jobs-change-password.html">
                                                 <i class="fa fa-key" aria-hidden="true"></i>
                                                 <span>Change Password</span></a></li>
-                                        <li><a href="index.html">
+                                        <li><a href="logout.php">
                                                 <i class="fa fa-sign-out" aria-hidden="true"></i>
                                                 <span>Log Out</span></a></li>
                                     </ul>
@@ -761,9 +771,9 @@ echo $mail?"<h1>Email Sent Successfully!</h1>":"<h1>Email sending failed.</h1>";
 </html>
 
 
-<?php
-if (isset($_POST['upload_jobs'])) {
-    return "hello";
+<?php 
+}else{
+     header("Location: index.php");
+     exit();
 }
-
-?>
+ ?>

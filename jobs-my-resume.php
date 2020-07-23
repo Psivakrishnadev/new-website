@@ -1,4 +1,5 @@
 <?php
+session_start();
 include "db_conn.php";
 if (isset($_POST['skill'])) {
     $skils = $_POST['skils'];
