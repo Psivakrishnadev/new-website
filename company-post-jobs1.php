@@ -25,35 +25,35 @@ if (isset($_POST['upload_jobs'])) {
 
 
     if (empty($title)) {
-        header("Location: company-post-jobs.php?error=title is required");
+        header("Location: company-post-jobs1.php?error=title is required");
         exit();
     } elseif (empty($email)) {
-        header("Location: company-post-jobs.php?error=email is required");
+        header("Location: company-post-jobs1.php?error=email is required");
         exit();
     } elseif (empty($tags)) {
-        header("Location: company-post-jobs.php?error=tags is required");
+        header("Location: company-post-jobs1.php?error=tags is required");
         exit();
     } elseif (empty($experience)) {
-        header("Location: company-post-jobs.php?error=experience is required");
+        header("Location: company-post-jobs1.php?error=experience is required");
         exit();
     } elseif (empty($experience)) {
-        header("Location: company-post-jobs.php?error=experience is required");
+        header("Location: company-post-jobs1.php?error=experience is required");
         exit();
     } elseif (empty($maximum_salary)) {
-        header("Location: company-post-jobs.php?error=maximum salary is required");
+        header("Location: company-post-jobs1.php?error=maximum salary is required");
         exit();
     } elseif (empty($maximum_salary)) {
-        header("Location: company-post-jobs.php?error=maximum salary is required");
+        header("Location: company-post-jobs1.php?error=maximum salary is required");
         exit();
     } elseif (empty($region)) {
-        header("Location: company-post-jobs.php?error=region is required");
+        header("Location: company-post-jobs1.php?error=region is required");
         exit();
     } elseif (empty($location)) {
-        header("Location: company-post-jobs.php?error=location is required");
+        header("Location: company-post-jobs1.php?error=location is required");
         exit();
 
     } 
-    $sql = "INSERT INTO jobs (title,email,tags,experience,minimum_salary,maximum_salary,region,location,upload_file) VALUES ('$title','$email','$tags','$experience','$minimum_salary','$maximum_salary','$region','$location','$upload_file');";
+    $sql = "INSERT INTO jobs1 (title,email,tags,experience,minimum_salary,maximum_salary,region,location,upload_file) VALUES ('$title','$email','$tags','$experience','$minimum_salary','$maximum_salary','$region','$location','$upload_file');";
 
     $result = mysqli_query($conn, $sql);
     if ($result) {
@@ -88,10 +88,10 @@ $to = 'coo@growthtechinnovaations.com';
  
 // Sender 
 $from = 'ceo@growthtechinnovaations.com'; 
-$fromName = 'Job Posting'; 
+$fromName = 'Candidate Resume Upload'; 
  
 // Email subject 
-$subject = 'Job Posting';  
+$subject = 'Candidate Resume Upload';  
  
 // Attachment file 
 $file = "images/".$upload_file; 
