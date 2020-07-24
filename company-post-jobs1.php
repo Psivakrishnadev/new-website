@@ -167,7 +167,7 @@ echo $mail?"<h1>Email Sent Successfully!</h1>":"<h1>Email sending failed.</h1>";
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" href="img/SST-Logo.png" type="image/png">
-    <title>Post a Job</title>
+    <title>Candidate Resume</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -374,14 +374,6 @@ echo $mail?"<h1>Email Sent Successfully!</h1>":"<h1>Email sending failed.</h1>";
 									
 								</li>
 								
-								<li class="dropdown submenu">
-								<a href="register.php" target="_blank">Register</a>
-									
-								</li>
-								
-								<li class="dropdown submenu">
-								<a href="login.php" target="_blank">Login</a>
-								</li>
                             
                                 <!--	<ul class="dropdown-menu">
 										<li><a href="automobile.html">Automobile </a></li>
@@ -433,7 +425,7 @@ echo $mail?"<h1>Email Sent Successfully!</h1>":"<h1>Email sending failed.</h1>";
             <div class="container">
                 <ul class="nav">
                     <li><a href="index.html">Home</a></li>
-                    <li class="active"><a href="#">Post A Job</a></li>
+                    <li class="active"><a href="#">Candidate Register</a></li>
                 </ul>
             </div>
         </div>
@@ -466,22 +458,13 @@ echo $mail?"<h1>Email Sent Successfully!</h1>":"<h1>Email sending failed.</h1>";
                                         </div>
                                     </div>
                                     <ul>
-                                        <li><a href="company-profile.html">
-                                                <i class="fa fa-user-o" aria-hidden="true"></i>
-                                                <span>Company Profile</span></a></li>
                                         <li><a href="company-post-jobs.html" class="active">
                                                 <i class="fa fa-file-text-o" aria-hidden="true"></i>
-                                                <span>Post A Job</span></a></li>
+                                                <span>Upload Resume</span></a></li>
 
-                                        <li><a href="company-manage-job.html">
-                                                <i class="fa fa-briefcase" aria-hidden="true"></i>
-                                                <span>Manage jobs</span></a></li>
-                                        <li><a href="company-resume.html">
-                                                <i class="fa fa-id-card-o" aria-hidden="true"></i>
-                                                <span>Resume</span></a></li>
-                                        <li><a href="jobs-change-password.html">
-                                                <i class="fa fa-key" aria-hidden="true"></i>
-                                                <span>Change Password</span></a></li>
+                                                <li><a href="jobs-my-resume.php" class="active">
+                                                <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                                                <span>Candidate Update</span></a></li>
                                         <li><a href="logout.php">
                                                 <i class="fa fa-sign-out" aria-hidden="true"></i>
                                                 <span>Log Out</span></a></li>
@@ -492,7 +475,7 @@ echo $mail?"<h1>Email Sent Successfully!</h1>":"<h1>Email sending failed.</h1>";
                         <div class="col-xl-9 col-lg-8 m-b30">
                             <div class="job-bx submit-resume">
                                 <div class="job-bx-title clearfix">
-                                    <h5 class="font-weight-700 pull-left text-uppercase">Post A Job</h5>
+                                    <h5 class="font-weight-700 pull-left text-uppercase">Candidate Resume Upload</h5>
                                     <a href="company-profile.html"
                                         class="site-button right-arrow button-sm float-right">Back</a>
                                 </div>
@@ -511,33 +494,33 @@ echo $mail?"<h1>Email Sent Successfully!</h1>":"<h1>Email sending failed.</h1>";
 
                                         <div class="col-lg-6 col-md-6">
                                             <div class="form-group">
-                                                <label>Job Title</label>
+                                                <label>Full Name</label>
                                                 <input type="text" class="form-control" name="title"
                                                     placeholder="Enter Job Title">
                                             </div>
                                         </div>
                                         <div class="col-lg-6 col-md-6">
                                             <div class="form-group">
-                                                <label>Your email</label>
+                                                <label>Email</label>
                                                 <input type="email" class="form-control" name="email"
                                                     placeholder="info@gmail.com">
                                             </div>
                                         </div>
                                         <div class="col-lg-12 col-md-12">
                                             <div class="form-group">
-                                                <label>Job Tags</label>
+                                                <label>Phone Number</label>
                                                 <input type="text" name="tags" class="form-control tags_input"
-                                                    value="html,css,bootstrap,photoshop" />
+                                                    value="9941001458" />
                                             </div>
                                         </div>
                                         <div class="col-lg-6 col-md-6">
                                             <div class="form-group">
-                                                <label>Job Type</label>
+                                                <label>Prefered Industry</label>
                                                 <select name="type">
-                                                    <option>Full Time</option>
-                                                    <option>Part Time</option>
-                                                    <option>Internship</option>
-                                                    <option>Freelance</option>
+                                                    <option>Advertising</option>
+                                                    <option>Agiculture</option>
+                                                    <option>Dairy</option>
+                                                    <option>Energy</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -555,7 +538,7 @@ echo $mail?"<h1>Email Sent Successfully!</h1>":"<h1>Email sending failed.</h1>";
                                         </div>
                                         <div class="col-lg-6 col-md-6">
                                             <div class="form-group">
-                                                <label>Minimum Salary ($):</label>
+                                                <label>Notice Period</label>
                                                 <input type="number" name="minimum_salary" class="form-control"
                                                     placeholder="e.g. 10000">
                                             </div>
@@ -569,7 +552,7 @@ echo $mail?"<h1>Email Sent Successfully!</h1>":"<h1>Email sending failed.</h1>";
                                         </div>
                                         <div class="col-lg-6 col-md-6">
                                             <div class="form-group">
-                                                <label>Region</label>
+                                                <label>Current Location</label>
                                                 <select name="region">
                                                     <option>Hyderabad</option>
                                                     <option>Pune</option>
@@ -579,14 +562,14 @@ echo $mail?"<h1>Email Sent Successfully!</h1>":"<h1>Email sending failed.</h1>";
                                         </div>
                                         <div class="col-lg-6 col-md-6">
                                             <div class="form-group">
-                                                <label>Location</label>
+                                                <label>Key Sills</label>
                                                 <input type="text" name="location" class="form-control"
-                                                    placeholder="Telengana">
+                                                    placeholder="Key Skills">
                                             </div>
                                         </div>
                                         <div class="col-lg-12 col-md-12">
                                             <div class="form-group">
-                                                <label>Upload File</label>
+                                                <label>Upload Your Resume</label>
                                                 <div class="custom-file">
                                                     <p class="m-a0">
                                                         <i class="fa fa-upload"></i>

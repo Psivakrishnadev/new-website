@@ -39,7 +39,7 @@ if (isset($_POST['login'])) {
                         header('Location: company-post-jobs.php');
                         exit();
                     } elseif ($row['role'] == 'candidate') {
-                        header('Location: jobs-my-resume.php');
+                        header('Location: company-post-jobs1.php');
                         exit();
                     }
                 } else {

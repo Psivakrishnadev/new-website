@@ -374,14 +374,6 @@ echo $mail?"<h1>Email Sent Successfully!</h1>":"<h1>Email sending failed.</h1>";
 									
 								</li>
 								
-								<li class="dropdown submenu">
-								<a href="register.php" target="_blank">Register</a>
-									
-								</li>
-								
-								<li class="dropdown submenu">
-								<a href="login.php" target="_blank">Login</a>
-								</li>
                             
                                 <!--	<ul class="dropdown-menu">
 										<li><a href="automobile.html">Automobile </a></li>
