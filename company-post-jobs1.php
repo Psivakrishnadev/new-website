@@ -455,9 +455,7 @@ echo $mail?"<h1>Email Sent Successfully!</h1>":"<h1>Email sending failed.</h1>";
                                                 <i class="fa fa-pencil"></i>
                                             </div>
                                         </div>
-                                        <div class="candidate-title">
-                                            <h4 class="m-b5"><a href="javascript:void(0);"><?= $_SESSION['user_name']?></a></h4>
-                                        </div>
+                                        
                                     </div>
                                     <ul>
                                  <!--       <li><a href="company-post-jobs1.php" class="active">
