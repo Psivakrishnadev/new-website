@@ -354,32 +354,32 @@ if (isset($_POST['send_mail'])) {
 										</li>
 									</ul>
 								</li> -->
-                            
+
                             <li class="dropdown submenu">
-									<a href="clients.html" target="_blank">Clients</a>
-									<!--<ul class="dropdown-menu">
+                                <a href="clients.html" target="_blank">Clients</a>
+                                <!--<ul class="dropdown-menu">
 										<li><a href="company-logo.html">Compnaies logo's </a></li>
-										
+
 									</ul> -->
-								</li>
-								<li class="dropdown submenu">
-									<a href="industries.html" target="_blank">Industires</a>
-									
-								</li>
-								
-								<li class="dropdown submenu">
-								<a href="register.php" target="_blank">Register</a>
-									
-								</li>
-								
-								<li class="dropdown submenu">
-								<a href="login.php" target="_blank">Login</a>
-								</li>
-                            
-                            
-                            
-                        
-                                <!--	<ul class="dropdown-menu">
+                            </li>
+                            <li class="dropdown submenu">
+                                <a href="industries.html" target="_blank">Industires</a>
+
+                            </li>
+
+                            <li class="dropdown submenu">
+                                <a href="register.php" target="_blank">Register</a>
+
+                            </li>
+
+                            <li class="dropdown submenu">
+                                <a href="login.php" target="_blank">Login</a>
+                            </li>
+
+
+
+
+                            <!--	<ul class="dropdown-menu">
 										<li><a href="automobile.html">Automobile </a></li>
 										<li><a href="banking-insurance.html">Banking and  Insurance</a></li>
 										<li><a href="education.html">Education</a></li>
@@ -395,7 +395,7 @@ if (isset($_POST['send_mail'])) {
 										<li><a href="manufacturing.html">Manufacturing</a></li>
 										<li><a href="telecommunication.html">Telecommunication</a></li>
 									</ul> -->
-                            
+
                             <!--<li class="dropdown submenu">
 									<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Members  Register </a>
 									<ul class="dropdown-menu right">
@@ -404,7 +404,7 @@ if (isset($_POST['send_mail'])) {
 
 									</ul>
 								</li> -->
-                            
+
                         </ul>
                         <ul class="nav navbar-nav navbar-right">
                             <li><a class="popup-with-zoom-anim" href="#test-search"><i class="icon icon-Search"></i></a>
@@ -1797,10 +1797,17 @@ if (isset($_POST['send_mail'])) {
                                     <a class="site-button-link" href="javascript:void(0);">here</a>.
                                 </p>
                             </div>
+<<<<<<< .mine
+                            <form action="" method="post">
+                                <button class="btn btn-success" type="submit">Send mail</button>
+
+                            </form>
+=======
                             <form action="jobs-my-resume.php" method="post">
                                 <button class="btn btn-success" type="submit">Send mail</button>
 
                             </form>
+>>>>>>> .theirs
                         </div>
                     </div>
                 </div>
