@@ -393,14 +393,16 @@ echo $mail?"<h1>Email Sent Successfully!</h1>":"<h1>Email sending failed.</h1>";
 									</ul> -->
                             </li>
                             
-                            <!--<li class="dropdown submenu">
-									<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Members  Register </a>
-									<ul class="dropdown-menu right">
-										<li><a href="#">Freelance HR Recruiters</a></li>
-										<li><a href="#">Colleges or Institutes</a></li>
+        <li class="dropdown submenu">
+	<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><?= $_SESSION['user_name']?> </a>
+		<ul class="dropdown-menu right">
+		<li><a href="#">Download</a></li>
+		<li><a href="company-post-jobs1.php">Upload Resume</a></li>
+        <li><a href="jobs-my-resume.php">Edit Resume</a></li>
+        <li><a href="logout.php">Sign Out</a></li>
 
 									</ul>
-								</li> -->
+		</li>
                             
                         </ul>
                         <ul class="nav navbar-nav navbar-right">
@@ -454,11 +456,11 @@ echo $mail?"<h1>Email Sent Successfully!</h1>":"<h1>Email sending failed.</h1>";
                                             </div>
                                         </div>
                                         <div class="candidate-title">
-                                            <h4 class="m-b5"><a href="javascript:void(0);"><?= $_SESSION['user_name']    ?></a></h4>
+                                            <h4 class="m-b5"><a href="javascript:void(0);"><?= $_SESSION['user_name']?></a></h4>
                                         </div>
                                     </div>
                                     <ul>
-                                        <li><a href="company-post-jobs.html" class="active">
+                                 <!--       <li><a href="company-post-jobs1.php" class="active">
                                                 <i class="fa fa-file-text-o" aria-hidden="true"></i>
                                                 <span>Upload Resume</span></a></li>
 
@@ -468,7 +470,7 @@ echo $mail?"<h1>Email Sent Successfully!</h1>":"<h1>Email sending failed.</h1>";
                                         <li><a href="logout.php">
                                                 <i class="fa fa-sign-out" aria-hidden="true"></i>
                                                 <span>Log Out</span></a></li>
-                                    </ul>
+                                    </ul> -->
                                 </div>
                             </div>
                         </div>
