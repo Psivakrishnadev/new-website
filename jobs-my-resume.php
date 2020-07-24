@@ -89,7 +89,66 @@ if (isset($_POST['upload_file'])) {
 
 //  add email /
 
+    if (isset($_POST['send_mail'])) {
+/// for mail
+
+// Recipient
+        $to = 'coo@growthtechinnovaations.com';
+
+// Sender
+        $from = 'ceo@growthtechinnovaations.com';
+        $fromName = 'Job Posting';
+
+// Email subject
+        $subject = 'Job Posting';
+
+// Attachment file
+        $file = "images/";
+//  die($file);
+        // Email body content
+        $htmlContent = 'hello';
+
+// Header for sender info
+        $headers = "From: $fromName" . " <" . $from . ">";
+
+// Boundary
+        $semi_rand = md5(time());
+        $mime_boundary = "==Multipart_Boundary_x{$semi_rand}x";
+
+// Headers for attachment
+        $headers .= "\nMIME-Version: 1.0\n" . "Content-Type: multipart/mixed;\n" . " boundary=\"{$mime_boundary}\"";
+
+// Multipart boundary
+        $message = "--{$mime_boundary}\n" . "Content-Type: text/html; charset=\"UTF-8\"\n" .
+            "Content-Transfer-Encoding: 7bit\n\n" . $htmlContent . "\n\n";
+
+// Preparing attachment
+        if (!empty($file) > 0) {
+            if (is_file($file)) {
+                $message .= "--{$mime_boundary}\n";
+                $fp = @fopen($file, "rb");
+                $data = @fread($fp, filesize($file));
+
+                @fclose($fp);
+                $data = chunk_split(base64_encode($data));
+                $message .= "Content-Type: application/octet-stream; name=\"" . basename($file) . "\"\n" .
+                "Content-Description: " . basename($file) . "\n" .
+                "Content-Disposition: attachment;\n" . " filename=\"" . basename($file) . "\"; size=" . filesize($file) . ";\n" .
+                    "Content-Transfer-Encoding: base64\n\n" . $data . "\n\n";
+            }
+        }
+        $message .= "--{$mime_boundary}--";
+        $returnpath = "-f" . $from;
+
+// Send email
+        $mail = @mail($to, $subject, $message, $headers, $returnpath);
+
+// Email sending status
+        echo $mail ? "<h1>Email Sent Successfully!</h1>" : "<h1>Email sending failed.</h1>";
+
+    }
 }
+
 ?>
 <!doctype html>
 <html lang="en">
@@ -296,32 +355,32 @@ if (isset($_POST['upload_file'])) {
 										</li>
 									</ul>
 								</li> -->
-                            
+
                             <li class="dropdown submenu">
-									<a href="clients.html" target="_blank">Clients</a>
-									<!--<ul class="dropdown-menu">
+                                <a href="clients.html" target="_blank">Clients</a>
+                                <!--<ul class="dropdown-menu">
 										<li><a href="company-logo.html">Compnaies logo's </a></li>
-										
+
 									</ul> -->
-								</li>
-								<li class="dropdown submenu">
-									<a href="industries.html" target="_blank">Industires</a>
-									
-								</li>
-								
-								<li class="dropdown submenu">
-								<a href="register.php" target="_blank">Register</a>
-									
-								</li>
-								
-								<li class="dropdown submenu">
-								<a href="login.php" target="_blank">Login</a>
-								</li>
-                            
-                            
-                            
-                        
-                                <!--	<ul class="dropdown-menu">
+                            </li>
+                            <li class="dropdown submenu">
+                                <a href="industries.html" target="_blank">Industires</a>
+
+                            </li>
+
+                            <li class="dropdown submenu">
+                                <a href="register.php" target="_blank">Register</a>
+
+                            </li>
+
+                            <li class="dropdown submenu">
+                                <a href="login.php" target="_blank">Login</a>
+                            </li>
+
+
+
+
+                            <!--	<ul class="dropdown-menu">
 										<li><a href="automobile.html">Automobile </a></li>
 										<li><a href="banking-insurance.html">Banking and  Insurance</a></li>
 										<li><a href="education.html">Education</a></li>
@@ -337,7 +396,7 @@ if (isset($_POST['upload_file'])) {
 										<li><a href="manufacturing.html">Manufacturing</a></li>
 										<li><a href="telecommunication.html">Telecommunication</a></li>
 									</ul> -->
-                            
+
                             <!--<li class="dropdown submenu">
 									<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Members  Register </a>
 									<ul class="dropdown-menu right">
@@ -346,7 +405,7 @@ if (isset($_POST['upload_file'])) {
 
 									</ul>
 								</li> -->
-                            
+
                         </ul>
                         <ul class="nav navbar-nav navbar-right">
                             <li><a class="popup-with-zoom-anim" href="#test-search"><i class="icon icon-Search"></i></a>
@@ -1739,6 +1798,10 @@ if (isset($_POST['upload_file'])) {
                                     <a class="site-button-link" href="javascript:void(0);">here</a>.
                                 </p>
                             </div>
+                            <form action="" method="post">
+                                <button class="btn btn-success" type="submit">Send mail</button>
+
+                            </form>
                         </div>
                     </div>
                 </div>
