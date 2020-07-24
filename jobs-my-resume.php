@@ -90,69 +90,68 @@ if (isset($_POST['upload_file'])) {
 //  add email /
 
 }
-
 if (isset($_POST['send_mail'])) {
     /// for mail
-
+    
     // Recipient
-    $to = 'coo@growthtechinnovaations.com';
-
+            $to = 'coo@growthtechinnovaations.com';
+    
     // Sender
-    $from = 'ceo@growthtechinnovaations.com';
-    $fromName = 'Job Posting';
-
+            $from = 'ceo@growthtechinnovaations.com';
+            $fromName = 'Job Posting';
+    
     // Email subject
-    $subject = 'Job Posting';
-
+            $subject = 'Job Posting';
+    
     // Attachment file
-    $file = "images/";
+            $file = "images/";
     //  die($file);
-    // Email body content
-    $htmlContent = 'hello';
-
+            // Email body content
+            $htmlContent = 'hello';
+    
     // Header for sender info
-    $headers = "From: $fromName" . " <" . $from . ">";
-
+            $headers = "From: $fromName" . " <" . $from . ">";
+    
     // Boundary
-    $semi_rand = md5(time());
-    $mime_boundary = "==Multipart_Boundary_x{$semi_rand}x";
-
+            $semi_rand = md5(time());
+            $mime_boundary = "==Multipart_Boundary_x{$semi_rand}x";
+    
     // Headers for attachment
-    $headers .= "\nMIME-Version: 1.0\n" . "Content-Type: multipart/mixed;\n" . " boundary=\"{$mime_boundary}\"";
-
+            $headers .= "\nMIME-Version: 1.0\n" . "Content-Type: multipart/mixed;\n" . " boundary=\"{$mime_boundary}\"";
+    
     // Multipart boundary
-    $message = "--{$mime_boundary}\n" . "Content-Type: text/html; charset=\"UTF-8\"\n" .
-        "Content-Transfer-Encoding: 7bit\n\n" . $htmlContent . "\n\n";
-
+            $message = "--{$mime_boundary}\n" . "Content-Type: text/html; charset=\"UTF-8\"\n" .
+                "Content-Transfer-Encoding: 7bit\n\n" . $htmlContent . "\n\n";
+    
     // Preparing attachment
-    if (!empty($file) > 0) {
-        if (is_file($file)) {
-            $message .= "--{$mime_boundary}\n";
-            $fp = @fopen($file, "rb");
-            $data = @fread($fp, filesize($file));
-
-            @fclose($fp);
-            $data = chunk_split(base64_encode($data));
-            $message .= "Content-Type: application/octet-stream; name=\"" . basename($file) . "\"\n" .
-            "Content-Description: " . basename($file) . "\n" .
-            "Content-Disposition: attachment;\n" . " filename=\"" . basename($file) . "\"; size=" . filesize($file) . ";\n" .
-                "Content-Transfer-Encoding: base64\n\n" . $data . "\n\n";
-        }
-    }
-    $message .= "--{$mime_boundary}--";
-    $returnpath = "-f" . $from;
-
+            if (!empty($file) > 0) {
+                if (is_file($file)) {
+                    $message .= "--{$mime_boundary}\n";
+                    $fp = @fopen($file, "rb");
+                    $data = @fread($fp, filesize($file));
+    
+                    @fclose($fp);
+                    $data = chunk_split(base64_encode($data));
+                    $message .= "Content-Type: application/octet-stream; name=\"" . basename($file) . "\"\n" .
+                    "Content-Description: " . basename($file) . "\n" .
+                    "Content-Disposition: attachment;\n" . " filename=\"" . basename($file) . "\"; size=" . filesize($file) . ";\n" .
+                        "Content-Transfer-Encoding: base64\n\n" . $data . "\n\n";
+                }
+            }
+            $message .= "--{$mime_boundary}--";
+            $returnpath = "-f" . $from;
+    
     // Send email
-    $mail = @mail($to, $subject, $message, $headers, $returnpath);
-
+            $mail = @mail($to, $subject, $message, $headers, $returnpath);
+    
     // Email sending status
-    echo $mail ? "<h1>Email Sent Successfully!</h1>" : "<h1>Email sending failed.</h1>";
-
-}
+            echo $mail ? "<h1>Email Sent Successfully!</h1>" : "<h1>Email sending failed.</h1>";
+    
+        }
 ?>
 <!doctype html>
 <html lang="en">
-
+  
 <!-- Mirrored from designarc.biz/demos/advotis/index-5.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 May 2020 08:31:23 GMT -->
 
 <head>
@@ -1798,10 +1797,17 @@ if (isset($_POST['send_mail'])) {
                                     <a class="site-button-link" href="javascript:void(0);">here</a>.
                                 </p>
                             </div>
+<<<<<<< .mine
                             <form action="" method="post">
                                 <button class="btn btn-success" type="submit">Send mail</button>
 
                             </form>
+=======
+                            <form action="jobs-my-resume.php" method="post">
+                                <button class="btn btn-success" type="submit">Send mail</button>
+
+                            </form>
+>>>>>>> .theirs
                         </div>
                     </div>
                 </div>
