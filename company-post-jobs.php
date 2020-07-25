@@ -468,9 +468,9 @@ echo $mail?"<h1>Email Sent Successfully!</h1>":"<h1>Email sending failed.</h1>";
                                         <li><a href="company-manage-job.html">
                                                 <i class="fa fa-briefcase" aria-hidden="true"></i>
                                                 <span>Manage jobs</span></a></li>
-                                        <li><a href="company-resume.html">
+                                        <li><a href="interview.php">
                                                 <i class="fa fa-id-card-o" aria-hidden="true"></i>
-                                                <span>Resume</span></a></li>
+                                                <span>Generate Letter</span></a></li>
                                         <li><a href="jobs-change-password.html">
                                                 <i class="fa fa-key" aria-hidden="true"></i>
                                                 <span>Change Password</span></a></li>
