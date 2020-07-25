@@ -464,7 +464,6 @@ echo $mail?"<h1>Email Sent Successfully!</h1>":"<h1>Email sending failed.</h1>";
                                         <li><a href="company-post-jobs.html" class="active">
                                                 <i class="fa fa-file-text-o" aria-hidden="true"></i>
                                                 <span>Post A Job</span></a></li>
-
                                         <li><a href="company-manage-job.html">
                                                 <i class="fa fa-briefcase" aria-hidden="true"></i>
                                                 <span>Manage jobs</span></a></li>
